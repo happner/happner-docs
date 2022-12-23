@@ -27,3 +27,9 @@ Contents
     happn-cluster
     happner-cluster
 
+Developer notes
+---------------
+- ReadTheDocs tutorial: https://docs.readthedocs.io/en/stable/tutorial/
+- Using Sphinx to generate documentation: https://www.sphinx-doc.org/en/master/usage/quickstart.html
+- Working with Restructured Text: https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
+- Generating Restructured Text from JsDoc using Sphinx: https://pypi.org/project/sphinx-js/
