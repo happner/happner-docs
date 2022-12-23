@@ -1,22 +1,29 @@
-Welcome to Lumache's documentation!
-===================================
+Welcome to Happner
+==================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+The **happner** project is a feature-rich realtime framework, built specifically to run in resource-constrained environments (IOT).
+It consists of suite of Node libraries, with the primary modules being the following:
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+- happn-3:
+    the bottom layer, this manages data-storage, pub/sub and security. happn-3 can be used independently from the other layers - it's technical equivalent would be firebase.
+- happner-2:
+    the rpc layer, this sits on top of happn-3 and provides a means of exposing javascript module methods to the outside world.
+- happn-cluster:
+    sits on top of happn-3, allows for the creation of a pub/sub cluster.
+- happner-cluster:
+    sits on top of happn-3, happner-2 and happn-cluster, allows for the creation of a clustered rpc setup, where work is distributed across multiple cluster nodes in the cloud.
 
-.. note::
 
-   This project is under active development.
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+    bootstrap
+    configuration
+    happn
+    happner
+    happn-cluster
+    happner-cluster
+
