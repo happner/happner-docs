@@ -1,4 +1,4 @@
-Welcome to Happner
+Welcome to happner
 ==================
 
 The **happner** project is a feature-rich realtime framework, built specifically to run in resource-constrained environments (IOT).
@@ -19,13 +19,12 @@ Contents
 --------
 
 .. toctree::
+    :maxdepth: 1
 
-    bootstrap
-    configuration
-    happn
-    happner
-    happn-cluster
-    happner-cluster
+    happn-home
+    happner-home
+    happn-cluster-home
+    happner-cluster-home
 
 Developer notes
 ---------------

@@ -1,5 +1,5 @@
-Getting started
-===================
+Getting started with Happn
+==========================
 
 Prerequisites
 -------------
@@ -7,22 +7,19 @@ Prerequisites
 * Node javascript runtime (preferably v16 or higher)
 * npm package manager
 
-Happn
------
-
 Initial setup
-~~~~~~~~~~~~~
+-------------
 
 * Create a project directory
 * :code:`cd` into the directory and initialise a Node application using :code:`npm init`
 
   * follow the prompts to generate a :code:`package.json` file
 
-* Install the *happn* package using :code:`npm i happn-3`
+* Install the **happn** package using :code:`npm i happn-3`
 
 
 Running a happn-3 server using minimal code
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------
 
 .. code-block:: javascript
 
@@ -45,8 +42,8 @@ Running a happn-3 server using minimal code
     });
 
 The server-side happn client
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To connect to a running instance of *happn-3* server from another server:
+----------------------------
+To connect to a running instance of **happn-3** server from a *server application*:
 
 .. code-block:: javascript
 
@@ -61,8 +58,8 @@ To connect to a running instance of *happn-3* server from another server:
 
 
 The browser-based happn client
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To connect to a running instance of *happn-3* server from a browser application:
+------------------------------
+To connect to a running instance of **happn-3** server from a *browser application*:
 
 .. code-block:: html
 
@@ -76,18 +73,13 @@ To connect to a running instance of *happn-3* server from a browser application:
 
     </script>
 
-Happner
--------
+A working example
+-----------------
+In this example, we will create a **happn server** instance and connect 2 clients to it - a **server client** and a **browser client**.
+The browser client will then subscribe to any data events that might occur on the server. The server client will then set a data point on the happn server.
 
-Initial setup
-~~~~~~~~~~~~~
-
-* Create a project directory
-* :code:`cd` into the directory and initialise a Node application using :code:`npm init`
-
-  * follow the prompts to generate a :code:`package.json` file
-
-* Install the *happner* package using :code:`npm i happner-2`
+*What do we expect to see?*
+The browser client should receive an event emitted by the server, containing information about the data that was set by the server client.
 
 
 .. autosummary::
