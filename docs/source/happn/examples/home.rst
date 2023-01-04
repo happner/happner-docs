@@ -3,4 +3,4 @@ Examples
 
 .. toctree::
 
-    examples/simple-example-1
+    simple-example-1

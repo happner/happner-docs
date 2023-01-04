@@ -2,8 +2,8 @@
 
 # -- Project information
 
-project = 'Happner'
-copyright = '2022, Happner'
+project = 'happner'
+copyright = '2022, happner'
 author = 'leebow'
 
 release = '0.1'

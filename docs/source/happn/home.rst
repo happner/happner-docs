@@ -6,7 +6,7 @@ happn-3
 .. toctree::
     :maxdepth: 1
 
-    bootstrap
-    features
-    configuration
-    examples
+    bootstrap/home
+    features/home
+    configuration/home
+    examples/home

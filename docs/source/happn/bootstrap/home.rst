@@ -1,5 +1,5 @@
-Getting started with Happn
-==========================
+Getting started
+===============
 
 Prerequisites
 -------------
@@ -18,7 +18,7 @@ Initial setup
 * Install the **happn** package using :code:`npm i happn-3`
 
 
-.. include:: shared/basic-server.rst
+.. include:: ../shared/basic-server.rst
 
 
 Creating a happn-3 client
@@ -28,9 +28,9 @@ Creating a happn-3 client
 
     The *happn-3* package also contains a client which takes care of the complexities of communicating with the server. See the examples below.
 
-.. include:: shared/basic-server-client.rst
+.. include:: ../shared/basic-server-client.rst
 
-.. include:: shared/basic-browser-client.rst
+.. include:: ../shared/basic-browser-client.rst
 
 Next steps
 ----------
