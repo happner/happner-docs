@@ -21,10 +21,10 @@ Contents
 .. toctree::
     :maxdepth: 1
 
-    happn-home
-    happner-home
-    happn-cluster-home
-    happner-cluster-home
+    happn/home
+    happner/home
+    happn-cluster/home
+    happner-cluster/home
 
 Developer notes
 ---------------

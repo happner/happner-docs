@@ -18,8 +18,9 @@ Initial setup
 * Install the **happn** package using :code:`npm i happn-3`
 
 
-Running a happn-3 server using minimal code
--------------------------------------------
+Creating a happn-3 server
+-------------------------
+The example below illustrates creating a server using minimal code.
 
 .. code-block:: javascript
 
@@ -41,8 +42,13 @@ Running a happn-3 server using minimal code
         server.log.info('server up');
     });
 
-The server-side happn client
-----------------------------
+
+Creating a happn-3 client
+-------------------------
+
+Server-side client
+~~~~~~~~~~~~~~~~~~
+
 To connect to a running instance of **happn-3** server from a *server application*:
 
 .. code-block:: javascript
@@ -57,8 +63,8 @@ To connect to a running instance of **happn-3** server from a *server applicatio
     client = await HappnClient.create(config);
 
 
-The browser-based happn client
-------------------------------
+Browser client
+~~~~~~~~~~~~~~
 To connect to a running instance of **happn-3** server from a *browser application*:
 
 .. code-block:: html
@@ -73,14 +79,9 @@ To connect to a running instance of **happn-3** server from a *browser applicati
 
     </script>
 
-A working example
------------------
-In this example, we will create a **happn server** instance and connect 2 clients to it - a **server client** and a **browser client**.
-The browser client will then subscribe to any data events that might occur on the server. The server client will then set a data point on the happn server.
-
-*What do we expect to see?*
-The browser client should receive an event emitted by the server, containing information about the data that was set by the server client.
-
+Next steps
+----------
+Now that you have seen how to set up a basic server and client(s), take a look at this simple working :ref:`example<simple-example-1>`.
 
 .. autosummary::
    :toctree: generated
