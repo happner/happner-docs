@@ -12,6 +12,6 @@ Setting a data point from a server client
     const payload = { property1:'property1', property2:'property2', property3:'property3' };
 
     // now set the data via the client
-    client.set('data/', (e, result) => {
+    client.set('data/', payload, (e, result) => {
         console.log(`data has been set; result: ${JSON.stringify(result)}`);
     });

@@ -1,3 +1,5 @@
+..  _happn-3-home:
+
 happn-3
 =======
 
@@ -5,4 +7,6 @@ happn-3
     :maxdepth: 1
 
     bootstrap
+    features
+    configuration
     examples
