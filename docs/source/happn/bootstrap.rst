@@ -46,6 +46,10 @@ The example below illustrates creating a server using minimal code.
 Creating a happn-3 client
 -------------------------
 
+.. NOTE::
+
+    The *happn-3* package also contains a client which takes care of the complexities of communicating with the server. See the examples below.
+
 Server-side client
 ~~~~~~~~~~~~~~~~~~
 
