@@ -2,6 +2,10 @@ Welcome to happner
 ==================
 
 The **happner** project is a feature-rich realtime framework, built specifically to run in resource-constrained environments (IOT).
+
+.. NOTE::
+   A **realtime framework** is one where feedback on system events is near-instantaneous. In the happner project, this specifically means that a *pub-sub* model is used to notify interested clients of such events, and an *rpc* model is used to allow immediate invocation of functions between client and server (additional features such as REST are also fully supported).
+
 It consists of suite of Node libraries, with the primary modules being the following:
 
 - happn-3:
