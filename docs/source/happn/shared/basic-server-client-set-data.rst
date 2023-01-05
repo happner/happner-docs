@@ -3,15 +3,18 @@ Setting a data point from a server client
 
 .. code-block:: javascript
 
-    const { HappnClient } = require('happn-3');
+    const Happn = require("happn-3");
+    const HappnClient = Happn.client;
 
-    // create the client instance
-    const client = await HappnClient.create();
+    HappnClient.create().then((client2) => {
+      const payload = {
+        property1: "property1",
+        property2: "property2",
+        property3: "property3",
+      };
 
-    // create a payload to set on the data path
-    const payload = { property1:'property1', property2:'property2', property3:'property3' };
-
-    // now set the data via the client
-    client.set('data/', payload, (e, result) => {
-        console.log(`data has been set; result: ${JSON.stringify(result)}`);
+      // set a data point
+      client2.set("data/", payload, (e, result) => {
+        console.log("data has been set; result: ", result);
+      });
     });
