@@ -3,4 +3,5 @@ Examples
 
 .. toctree::
 
-    simple-example-1
+    pub-sub-basic
+    set-data-basic

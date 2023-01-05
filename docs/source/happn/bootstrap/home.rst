@@ -34,7 +34,7 @@ Creating a happn-3 client
 
 Next steps
 ----------
-Now that you have seen how to set up a basic server and client(s), take a look at this simple working :ref:`example<simple-example-1>`.
+Now that you have seen how to set up a basic server and client(s), take a look at this simple working :ref:`example<pub-sub-basic>`.
 
 .. autosummary::
    :toctree: generated

@@ -1,19 +1,19 @@
-..  _simple-example-1:
+..  _pub-sub-basic:
 
-Example 1: Basic pubsub
-=======================
+Example: Basic pubsub
+=====================
 In this example, we will create a **happn server** instance and connect 2 **server clients** to it.
 
-* *client1* will subscribe to all data events emitted by the happn server
-* *client2* will set a data point on the happn server
+* *client1* will subscribe to an event path on the happn server
+* *client2* will publish an object to the happn server
 
 Expectations
 ~~~~~~~~~~~~
-*client1* should receive an event emitted by the server, containing information about the data that was set by *client2*.
+*client1* should receive an event emitted by the server, containing information about the object that was published by *client2*.
 
 Code
 ~~~~
-Create a file (eg: :code:`example1.js`) and paste the following code into it:
+Create a file (eg: :code:`pub-sub-basic.js`) and paste the following code into it:
 
 .. code-block:: javascript
 
@@ -22,35 +22,38 @@ Create a file (eg: :code:`example1.js`) and paste the following code into it:
 
     let server;
 
-    Happn.service.create().then((happn) => {
+    // create server with empty configuration - internal defaults will be used
+    Happn.service.create({}).then((happn) => {
       server = happn;
       server.log.info("server up");
 
-      HappnClient.create().then((client1) => {
+      // create client1 with empty configuration - internal defaults will be used
+      HappnClient.create({}).then((client1) => {
+        // subscribe to all events on /data path
         client1.on("/data/*", (msg, meta) => {
           console.log("event detected: ", msg);
         });
       });
 
-      HappnClient.create().then((client2) => {
+    // create client2 with empty configuration - internal defaults will be used
+      HappnClient.create({}).then((client2) => {
         const payload = {
           property1: "property1",
           property2: "property2",
           property3: "property3",
         };
 
-        client2.set("data/", payload, (e, result) => {
-          console.log("data has been set; result: ", result);
+        // publish an object on the data/ path
+        client2.publish("data/", payload, (e, result) => {
+          console.log("data has been published; result: ", result);
         });
       });
     });
 
-Run the above using :code:`node example1.js`
+Run the above using :code:`node pub-sub-basic.js`
 
 Output
 ~~~~~~
-The output when running the above code will be:
-
 The first block of output will display the default address and port of the happn server, eg:
 
 .. code-block:: bash
@@ -67,22 +70,21 @@ The next block of output will display the console logs:
       property2: 'property2',
       property3: 'property3'
     }
-    data has been set; result:  {
-      property1: 'property1',
-      property2: 'property2',
-      property3: 'property3',
+    data has been published; result:  {
       _meta: {
         path: 'data/',
-        created: 1672915267665,
-        modified: 1672915267665,
-        published: true,
+        eventId: 4,
         type: 'response',
         status: 'ok',
-        eventId: 4,
-        sessionId: '2993d9f4-9d0d-4211-8266-045b17c0f0fe',
-        action: 'set'
+        published: true
       }
     }
+
+
+Under the hood
+~~~~~~~~~~~~~~
+Using the :code:`publish` function on the client will trigger the server to emit an event to all subscribers on this path.
+**No data is persisted** on the server.
 
 .. autosummary::
    :toctree: generated
