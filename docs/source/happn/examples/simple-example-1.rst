@@ -22,25 +22,16 @@ Create a file (eg: :code:`example1.js`) and paste the following code into it:
 
     let server;
 
-    // create the server instance - by default uses address 0.0.0.0 and port 55000
-    Happn.service.create({}, (e, happn) => {
-      if (e) {
-        console.error(e);
-        throw e;
-      }
-
+    Happn.service.create().then((happn) => {
       server = happn;
       server.log.info("server up");
 
-      // create a client - by default connects to address 0.0.0.0:55000
       HappnClient.create().then((client1) => {
-        // subscribe to all events on the 'data' path
         client1.on("/data/*", (msg, meta) => {
           console.log("event detected: ", msg);
         });
       });
 
-      // create a client- by default connects to address 0.0.0.0:55000
       HappnClient.create().then((client2) => {
         const payload = {
           property1: "property1",
@@ -48,14 +39,11 @@ Create a file (eg: :code:`example1.js`) and paste the following code into it:
           property3: "property3",
         };
 
-        // set a data point
         client2.set("data/", payload, (e, result) => {
           console.log("data has been set; result: ", result);
         });
       });
     });
-
-
 
 Run the above using :code:`node example1.js`
 
