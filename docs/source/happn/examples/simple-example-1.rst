@@ -22,7 +22,7 @@ Create a file (eg: :code:`example1.js`) and paste the following code into it:
 
     let server;
 
-    // create the server instance
+    // create the server instance - by default uses address 0.0.0.0 and port 55000
     Happn.service.create({}, (e, happn) => {
       if (e) {
         console.error(e);
@@ -32,7 +32,7 @@ Create a file (eg: :code:`example1.js`) and paste the following code into it:
       server = happn;
       server.log.info("server up");
 
-      // create a client
+      // create a client - by default connects to address 0.0.0.0:55000
       HappnClient.create().then((client1) => {
         // subscribe to all events on the 'data' path
         client1.on("/data/*", (msg, meta) => {
@@ -40,7 +40,7 @@ Create a file (eg: :code:`example1.js`) and paste the following code into it:
         });
       });
 
-      // create a client
+      // create a client- by default connects to address 0.0.0.0:55000
       HappnClient.create().then((client2) => {
         const payload = {
           property1: "property1",
