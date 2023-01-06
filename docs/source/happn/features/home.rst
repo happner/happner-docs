@@ -3,7 +3,7 @@ Features
 
 .. toctree::
 
-    data-storage
+    querying-data
     pub-sub
     security
     transport

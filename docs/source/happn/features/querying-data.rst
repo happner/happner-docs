@@ -24,14 +24,14 @@ Use the :code:`set` function on the client:
     const Happn = require("happn-3");
     const HappnClient = Happn.client;
 
-     HappnClient.create().then((client) => {
+     HappnClient.create().then(client => {
         const payload = {
           property1: "property1",
           property2: "property2",
           property3: "property3",
         };
 
-        client.set("data/", payload).then((result) => {
+        client.set("data/", payload).then(result => {
           console.log("data has been set; result: ", result);
         });
     });
@@ -56,7 +56,7 @@ Use the :code:`set` function on the client:
             merge: true
         };
 
-        client.set("data/", payload, options).then((result) => {
+        client.set("data/", payload, options).then(result => {
           console.log("data has been set; result: ", result);
         });
 
@@ -74,7 +74,7 @@ Use the :code:`get` function on the client:
 
     ...
 
-    client.get("data/", payload).then((result) => {
+    client.get("data/", payload).then(result => {
       console.log("retrieved data: ", result);
     });
 
@@ -119,7 +119,7 @@ Use the :code:`get` function on the client:
             criteria: criteria,
             options: options,
           })
-          .then((results) => {
+          .then(results => {
             // do something with the results
            });
 
@@ -132,7 +132,7 @@ Use the :code:`getPaths` function on the client.
 
     ...
 
-    client.getPaths("data/*", payload).then((result) => {
+    client.getPaths("data/*", payload).then(result => {
       console.log("retrieved paths: ", result);
     });
 

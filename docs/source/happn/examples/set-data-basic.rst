@@ -29,7 +29,7 @@ Create a file (eg: :code:`set-data-basic.js`) and paste the following code into 
       server.log.info("server up");
 
       // create client1 with empty configuration - internal defaults will be used
-      HappnClient.create({}).then((client1) => {
+      HappnClient.create({}).then(client1 => {
         // subscribe to all events on /data path
         client1.on("/data/*", (msg, meta) => {
           console.log("event detected: ", msg);
@@ -42,7 +42,7 @@ Create a file (eg: :code:`set-data-basic.js`) and paste the following code into 
       });
 
     // create client2 with empty configuration - internal defaults will be used
-      HappnClient.create({}).then((client2) => {
+      HappnClient.create({}).then(client2 => {
         const payload = {
           property1: "property1",
           property2: "property2",
@@ -50,7 +50,7 @@ Create a file (eg: :code:`set-data-basic.js`) and paste the following code into 
         };
 
         // set a data point on the data/ path
-        client2.set("data/", payload, (e, result) => {
+        client2.set("data/", payload).then(result => {
           console.log("data has been set; result: ", result);
         });
       });
@@ -76,7 +76,7 @@ Run the above using :code:`node set-data-basic.js`
             merge: true
         };
 
-        client2.set("data/", payload, options, (e, result) => {
+        client2.set("data/", payload, options).then(result => {
           console.log("data has been set; result: ", result);
         });
         ...

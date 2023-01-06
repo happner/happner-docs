@@ -23,12 +23,12 @@ Create a file (eg: :code:`pub-sub-basic.js`) and paste the following code into i
     let server;
 
     // create server with empty configuration - internal defaults will be used
-    Happn.service.create({}).then((happn) => {
+    Happn.service.create({}).then(happn => {
       server = happn;
       server.log.info("server up");
 
       // create client1 with empty configuration - internal defaults will be used
-      HappnClient.create({}).then((client1) => {
+      HappnClient.create({}).then(client1 => {
         // subscribe to all events on /data path
         client1.on("/data/*", (msg, meta) => {
           console.log("event detected: ", msg);
@@ -36,7 +36,7 @@ Create a file (eg: :code:`pub-sub-basic.js`) and paste the following code into i
       });
 
     // create client2 with empty configuration - internal defaults will be used
-      HappnClient.create({}).then((client2) => {
+      HappnClient.create({}).then(client2 => {
         const payload = {
           property1: "property1",
           property2: "property2",
@@ -44,7 +44,7 @@ Create a file (eg: :code:`pub-sub-basic.js`) and paste the following code into i
         };
 
         // publish an object on the data/ path
-        client2.publish("data/", payload, (e, result) => {
+        client2.publish("data/", payload).then(result => {
           console.log("data has been published; result: ", result);
         });
       });
