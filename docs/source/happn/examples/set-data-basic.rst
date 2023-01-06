@@ -58,6 +58,29 @@ Create a file (eg: :code:`set-data-basic.js`) and paste the following code into 
 
 Run the above using :code:`node set-data-basic.js`
 
+.. NOTE::
+    The :code:`set` function on the client accepts a number of options, ie:
+
+    * noPublish - sets the data but does not publish to subscribers
+    * noStore - does not store the data but publishes to subscribers
+    * merge - merges an existing data object with a new object, newer fields are overwritten
+
+    eg:
+
+    .. code-block:: javascript
+
+        ...
+        const options = {
+            noPublish: false,
+            noStore: false,
+            merge: true
+        };
+
+        client2.set("data/", payload, options, (e, result) => {
+          console.log("data has been set; result: ", result);
+        });
+        ...
+
 Output
 ~~~~~~
 The first block of output will display the default address and port of the happn server, eg:
@@ -99,28 +122,6 @@ By default happn uses an in-memory data store to persist data (we are using the 
 but through :ref:`configuration<happn-configuration>` we are able to persist data to a number of different data stores such as :code:`nedb`,
 :code:`mongo` and others.
 
-.. NOTE::
-    The :code:`set` function on the client accepts a number of options, ie:
-
-    * noPublish - sets the data but does not publish to subscribers
-    * noStore - does not store the data but publishes to subscribers
-    * merge - merges an existing data object with a new object, newer fields are overwritten
-
-    eg:
-
-    .. code-block:: javascript
-
-        ...
-        const options = {
-            noPublish: false,
-            noStore: false,
-            merge: true
-        };
-
-        client2.set("data/", payload, options, (e, result) => {
-          console.log("data has been set; result: ", result);
-        });
-        ...
 
 .. autosummary::
    :toctree: generated
