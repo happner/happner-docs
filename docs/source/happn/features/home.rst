@@ -2,8 +2,9 @@ Features
 ========
 
 .. toctree::
+    :maxdepth: 1
 
-    querying-data
+    data/home
     pub-sub
     security
     transport
