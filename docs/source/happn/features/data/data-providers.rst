@@ -9,7 +9,7 @@ Happn provides a set of out-of-the-box data providers, which can be activated th
 * Loki_
 * Nedb_
 * Mongo_
-* Sqlite
+* Sqlite_
 * Elasticsearch
 
 .. admonition:: Unified interface for data operations
@@ -155,3 +155,38 @@ A typical Mongo configuration block can be found below:
     * :code:`collection` - the db collection name
 
         * this can also contain a replicaset, eg: :code:`mongodb://host1:27017,host2:27017,host3:27017/database?replicaSet=myRS`
+
+Sqlite
+------
+
+A typical Sqlite configuration block can be found below:
+
+.. code-block:: javascript
+
+    {
+      ...
+      services: {
+        data: {
+          config: {
+            secure: true,
+            datastores: [{
+              name: "temperatures",
+              provider: "sqlite",
+              isDefault: true,
+              settings: {
+                schema:  {
+                   indexes: [
+
+                   ]
+                }
+              }
+            }]
+          }
+        }
+      }
+      ...
+    }
+
+.. note::
+
+    Sqlite configuration requires additional fields to facilitate building the underlying data model. This is done using the :code;`schema` field.

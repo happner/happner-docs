@@ -3,6 +3,8 @@
 Configuration
 =============
 
+.. toctree::
 
+    matrix
 
 
