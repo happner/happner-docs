@@ -12,31 +12,33 @@ instance is started, a configuration file is passed as a parameter to the releva
 
 This configuration file is a javascript object in the form of:
 
-**happn and happn-cluster**
+**happn and happn-cluster:**
 
 .. code-block::
 
+    // example
     {
-        "name": "happn-server",
-        "host": "192.168.1.10",
-        "port": 90,
-        "services": {}
+        name: "happn-server",
+        host: "192.168.1.10",
+        port: 90,
+        services: {}
     }
 
-**happner and happner-cluster**
+**happner and happner-cluster:**
 
 .. code-block::
 
+    // example
     {
-        "happn": {
-            "services": {},
-            "name": "happner-server",
-            "host": "192.168.1.10",
-            "port": 90
+        happn: {
+            services: {},
+            name: "happner-server",
+            host: "192.168.1.10",
+            port: 90
         },
-        "endpoints": {},
-        "modules": {},
-        "components": {},
+        endpoints: {},
+        modules: {},
+        components: {},
     }
 
 The above samples are extremely "bare-bones" - the configuration file can be very comprehensive and is required for setting
@@ -78,22 +80,22 @@ An example usage of a builder would be as follows:
         .withSecure(true)
         .build();
 
-    /* log of config would be:
+    /* this produces:
     {
-        "name": "test happn",
-        "host": "192.168.1.10",
-        "port": 90,
-        "secure": true,
-        "services": {
-            "cache": {},
-            "connect": {},
-            "data": {},
-            "protocol": {},
-            "publisher": {},
-            "security": {},
-            "subscription": {},
-            "system": {},
-            "transport": {}
+        name: "test happn",
+        host: "192.168.1.10",
+        port: 90,
+        secure: true,
+        services: {
+            cache: {},
+            connect: {},
+            data: {},
+            protocol: {},
+            publisher: {},
+            security: {},
+            subscription: {},
+            system: {},
+            transport: {}
         }
     }
     */
@@ -105,11 +107,11 @@ Function matrix
 The following matrix breaks down the functions related to each builder - please note the following:
 
 - function parameters are omitted for brevity (see links to function details)
-- the table key is:
+- table legend:
    - H: happn builder
    - HR: happner builder
    - HC: happn-cluster builder
-   - HRC: happner-cluster bulider
+   - HRC: happner-cluster builder
 
 .. tabularcolumns:: |l{2cm}|l|c|c|c|c|c|
 
