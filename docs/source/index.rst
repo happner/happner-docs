@@ -32,3 +32,4 @@ Developer notes
     happner/home
     happn-cluster/home
     happner-cluster/home
+    configuration/home

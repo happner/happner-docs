@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'happner'
-copyright = '2022, happner'
+copyright = '2023, happner'
 author = 'leebow'
 
 release = '0.1'

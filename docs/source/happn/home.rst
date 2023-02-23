@@ -8,5 +8,4 @@ happn-3
 
     bootstrap/home
     features/home
-    configuration/home
     examples/home
