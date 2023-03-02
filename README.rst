@@ -11,3 +11,7 @@ https://docs.readthedocs.io/en/stable/tutorial/
 ## Building locally
 
 `sphinx-build -b html docs/source/ docs/build/html`
+
+Useful links
+~~~~~~~~~~~~
+- https://www.devdungeon.com/content/restructuredtext-rst-tutorial-0
