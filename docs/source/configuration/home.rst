@@ -4,7 +4,7 @@ Configuration
 =============
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 4
 
     intro
     matrix

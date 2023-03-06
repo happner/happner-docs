@@ -12,6 +12,8 @@ Builder functions
 withName
 --------
 
+.. container::
+
  - *definition*: :code:`withName(name: string)`
  - *purpose*: sets the name for the happn instance
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -28,6 +30,8 @@ withName
 
 withHost
 --------
+
+.. container::
 
  - *definition*: :code:`withHost(host: string)`
  - *purpose*: sets the host for the happn instance
@@ -46,6 +50,8 @@ withHost
 withPort
 --------
 
+.. container::
+
  - *definition*: :code:`withPort(port: number)`
  - *purpose*: sets the port for the happn instance
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -62,6 +68,8 @@ withPort
 
 withSecure
 ----------
+
+.. container::
 
  - *definition*: :code:`withSecure(secure: boolean)`
  - *purpose*: sets secure mode for happn instance
@@ -80,6 +88,8 @@ withSecure
 withAllowNestedPermissions
 --------------------------
 
+.. container::
+
  - *definition*: :code:`withAllowNestedPermissions(allow: boolean)`
  - *purpose*: allows nested permissions
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -97,6 +107,8 @@ withAllowNestedPermissions
 
 withCacheCheckPointAuthOverride
 -------------------------------
+
+.. container::
 
  - *definition*: :code:`withCacheCheckPointAuthOverride(max: number, maxAge: number)`
  - *purpose*: [TODO]
@@ -127,6 +139,8 @@ withCacheCheckPointAuthOverride
 withCacheCheckPointAuthTokenOverride
 ------------------------------------
 
+.. container::
+
  - *definition*: :code:`withCacheCheckPointAuthTokenOverride(max: number, maxAge: number)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -155,6 +169,8 @@ withCacheCheckPointAuthTokenOverride
 withCacheStatisticsInterval
 ---------------------------
 
+.. container::
+
  - *definition*: :code:`withCacheStatisticsInterval(interval: number)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -178,6 +194,8 @@ withCacheStatisticsInterval
 
 withCacheSecurityGroupPermissionsOverride
 -----------------------------------------
+
+.. container::
 
  - *definition*: :code:`withCacheSecurityGroupPermissionsOverride(max: number, maxAge: number)`
  - *purpose*: [TODO]
@@ -208,6 +226,8 @@ withCacheSecurityGroupPermissionsOverride
 withCacheSecurityGroupsOverride
 -------------------------------
 
+.. container::
+
  - *definition*: :code:`withCacheSecurityGroupsOverride(max: number, maxAge: number)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -235,6 +255,8 @@ withCacheSecurityGroupsOverride
 
 withCacheSecurityPasswordsOverride
 ----------------------------------
+
+.. container::
 
  - *definition*: :code:`withCacheSecurityPasswordsOverride(max: number, maxAge: number)`
  - *purpose*: [TODO]
@@ -264,6 +286,8 @@ withCacheSecurityPasswordsOverride
 withCacheSecurityUserPermissionsOverride
 ----------------------------------------
 
+.. container::
+
  - *definition*: :code:`withCacheSecurityPasswordsOverride(max: number, maxAge: number)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -291,6 +315,8 @@ withCacheSecurityUserPermissionsOverride
 
 withCacheSecurityUsersOverride
 ------------------------------
+
+.. container::
 
  - *definition*: :code:`withCacheSecurityUsersOverride(max: number, maxAge: number)`
  - *purpose*: [TODO]
@@ -320,6 +346,8 @@ withCacheSecurityUsersOverride
 
 withConnectSecurityExclusion
 ----------------------------
+
+.. container::
 
  - *definition*: :code:`withConnectSecurityExclusion(exclusion: string)`
  - *purpose*: [TODO]
@@ -352,6 +380,8 @@ withConnectSecurityExclusion
 withConnectSecurityForbiddenResponsePath
 ----------------------------------------
 
+.. container::
+
  - *definition*: :code:`withConnectSecurityForbiddenResponsePath(path: string)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -380,6 +410,8 @@ withConnectSecurityForbiddenResponsePath
 withConnectSecurityUnauthorizedResponsePath
 -------------------------------------------
 
+.. container::
+
  - *definition*: :code:`withConnectSecurityUnauthorizedResponsePath(path: string)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -407,6 +439,8 @@ withConnectSecurityUnauthorizedResponsePath
 
 withDataStore
 -------------
+
+.. container::
 
  - *definition*: :code:`withDataStore(name: string, provider: string, isDefault: boolean, isFsync: boolean, dbFile: string, fileName: string)`
  - *purpose*: [TODO]
@@ -442,6 +476,8 @@ withDataStore
 withDataIsSecure
 ----------------
 
+.. container::
+
  - *definition*: :code:`withDataIsSecure(secure: boolean)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -465,6 +501,8 @@ withDataIsSecure
 withProtocolAllowNestedPermissions
 ----------------------------------
 
+.. container::
+
  - *definition*: :code:`withProtocolAllowNestedPermissions(allow: boolean)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -487,6 +525,8 @@ withProtocolAllowNestedPermissions
 
 withProtocolInboundLayer
 ------------------------
+
+.. container::
 
  - *definition*: :code:`withProtocolInboundLayer(func: function)`
  - *purpose*: [TODO]
@@ -515,6 +555,8 @@ withProtocolInboundLayer
 withProtocolIsSecure
 --------------------
 
+.. container::
+
  - *definition*: :code:`withProtocolIsSecure(isSecure: boolean)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -537,6 +579,8 @@ withProtocolIsSecure
 
 withProtocolOutboundLayer
 -------------------------
+
+.. container::
 
  - *definition*: :code:`withProtocolOutboundLayer(func: function)`
  - *purpose*: [TODO]
@@ -565,6 +609,8 @@ withProtocolOutboundLayer
 withPublisherAcknowledgeTimeout
 -------------------------------
 
+.. container::
+
  - *definition*: :code:`withPublisherAcknowledgeTimeout(timeout: number)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -590,6 +636,8 @@ withPublisherAcknowledgeTimeout
 withPublisherTimeout
 --------------------
 
+.. container::
+
  - *definition*: :code:`withPublisherTimeout(timeout: number)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -613,6 +661,8 @@ withPublisherTimeout
 withSecurityActivateSessionManagement
 -------------------------------------
 
+.. container::
+
  - *definition*: :code:`withSecurityActivateSessionManagement(activate: boolean)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -635,6 +685,8 @@ withSecurityActivateSessionManagement
 
 withSecurityAccountLockoutEnabled
 ---------------------------------
+
+.. container::
 
  - *definition*: :code:`withSecurityAccountLockoutEnabled(enabled: boolean)`
  - *purpose*: [TODO]
@@ -661,6 +713,8 @@ withSecurityAccountLockoutEnabled
 withSecurityAccountLockoutAttempts
 ----------------------------------
 
+.. container::
+
  - *definition*: :code:`withSecurityAccountLockoutAttempts(attempts: number)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -685,6 +739,8 @@ withSecurityAccountLockoutAttempts
 
 withSecurityAccountLockoutRetryInterval
 ---------------------------------------
+
+.. container::
 
  - *definition*: :code:`withSecurityAccountLockoutRetryInterval(interval: number)`
  - *purpose*: [TODO]
@@ -711,6 +767,8 @@ withSecurityAccountLockoutRetryInterval
 withSecurityAdminPassword
 --------------------------
 
+.. container::
+
  - *definition*: :code:`withSecurityAdminPassword(password: string)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -736,6 +794,8 @@ withSecurityAdminPassword
 withSecurityAdminPublicKey
 --------------------------
 
+.. container::
+
  - *definition*: :code:`withSecurityAdminPublicKey(key: string)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -760,6 +820,8 @@ withSecurityAdminPublicKey
 
 withSecurityAdminGroupCustomData
 --------------------------------
+
+.. container::
 
  - *definition*: :code:`withSecurityAdminGroupCustomData(fieldName: string, fieldValue: string)`
  - *purpose*: [TODO]
@@ -787,6 +849,8 @@ withSecurityAdminGroupCustomData
 
 withSecurityAdminGroupPermission
 --------------------------------
+
+.. container::
 
  - *definition*: :code:`withSecurityAdminGroupPermission(permissionKey: string, actionPath: string)`
  - *purpose*: [TODO]
@@ -819,6 +883,8 @@ withSecurityAdminGroupPermission
 withSecurityAllowAnonymousAccess
 --------------------------------
 
+.. container::
+
  - *definition*: :code:`withSecurityAllowAnonymousAccess(allow: boolean)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -841,6 +907,8 @@ withSecurityAllowAnonymousAccess
 
 withSecurityAuthProvider
 ------------------------
+
+.. container::
 
  - *definition*: :code:`withSecurityAuthProvider(name: string, instance: any)`
  - *purpose*: [TODO]
@@ -867,6 +935,8 @@ withSecurityAuthProvider
 withSecurityCookie
 ------------------
 
+.. container::
+
  - *definition*: :code:`withSecurityCookie(name: string, domain: string)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -892,6 +962,8 @@ withSecurityCookie
 withSecurityLogSessionActivity
 ------------------------------
 
+.. container::
+
  - *definition*: :code:`withSecurityLogSessionActivity(shouldLog: boolean)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -914,6 +986,8 @@ withSecurityLogSessionActivity
 
 withSecurityLockTokenToLoginType
 --------------------------------
+
+.. container::
 
  - *definition*: :code:`withSecurityLockTokenToLoginType(shouldLock: boolean)`
  - *purpose*: [TODO]
@@ -938,6 +1012,8 @@ withSecurityLockTokenToLoginType
 withSecurityLockTokenToUserId
 -----------------------------
 
+.. container::
+
  - *definition*: :code:`withSecurityLockTokenToUserId(shouldLock: boolean)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -961,6 +1037,8 @@ withSecurityLockTokenToUserId
 withSecurityPbkdf2Iterations
 ----------------------------
 
+.. container::
+
  - *definition*: :code:`withSecurityPbkdf2Iterations(iterations: number)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -983,6 +1061,8 @@ withSecurityPbkdf2Iterations
 
 withSecurityProfile
 -------------------
+
+.. container::
 
  - *definition*: :code:`withSecurityProfile(name: string, sessionKey: string, sessionMatchOn: any, policyTTL: number, policyInactiveThreshold: number)`
  - *purpose*: [TODO]
@@ -1020,6 +1100,8 @@ withSecurityProfile
 withSessionActivityTTL
 ----------------------
 
+.. container::
+
  - *definition*: :code:`withSessionActivityTTL(ttl: number)`
  - *purpose*: [TODO]
  - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
@@ -1042,6 +1124,8 @@ withSessionActivityTTL
 
 withSessionTokenSecret
 ----------------------
+
+.. container::
 
  - *definition*: :code:`withSessionTokenSecret(secret: string)`
  - *purpose*: [TODO]
@@ -1066,85 +1150,443 @@ withSessionTokenSecret
 withSubscriptionAllowNestedPermissions
 --------------------------------------
 
+.. container::
+
+ - *definition*: :code:`withSubscriptionAllowNestedPermissions(shouldAllow: boolean)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*: :code:`builder.withSubscriptionAllowNestedPermissions(true)`
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                subscription: {
+                    config: {
+                        allowNestedPermissions: true
+                    }
+                }
+            }
+        }
+
 .. _withSubscriptionTreeSearchCacheSize:
 
 withSubscriptionTreeSearchCacheSize
 -----------------------------------
+
+.. container::
+
+ - *definition*: :code:`withSubscriptionTreeSearchCacheSize(size: number)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*: :code:`builder.withSubscriptionTreeSearchCacheSize(1000)`
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                subscription: {
+                    config: {
+                        subscriptionTree: {
+                            searchCache: 200,
+                        }
+                    }
+                }
+            }
+        }
 
 .. _withSubscriptionTreePermutationCacheSize:
 
 withSubscriptionTreePermutationCacheSize
 ----------------------------------------
 
+.. container::
+
+ - *definition*: :code:`withSubscriptionTreePermutationCacheSize(size: number)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*: :code:`builder.withSubscriptionTreePermutationCacheSize(5)`
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                subscription: {
+                    config: {
+                        subscriptionTree: {
+                            permutationCache: 200,
+                        }
+                    }
+                }
+            }
+        }
+
 .. _withSubscriptionTreeTimeout:
 
 withSubscriptionTreeTimeout
 ---------------------------
+
+.. container::
+
+ - *definition*: :code:`withSubscriptionTreeTimeout(timeout: number)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*: :code:`builder.withSubscriptionTreeTimeout(2500)`
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                subscription: {
+                    config: {
+                        subscriptionTree: {
+                            timeout: 2500,
+                        }
+                    }
+                }
+            }
+        }
 
 .. _withSubscriptionTreeFilterFunction:
 
 withSubscriptionTreeFilterFunction
 ----------------------------------
 
+.. container::
+
+ - *definition*: :code:`withSubscriptionTreeFilterFunction(function: any)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*: :code:`builder.withSubscriptionTreeFilterFunction(() => { return 'subscription filter function'; })`
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                subscription: {
+                    config: {
+                        subscriptionTree: {
+                            filter: () => {
+                                return 'subscription filter function';
+                            },
+                        }
+                    }
+                }
+            }
+        }
+
 .. _withSystemName:
 
 withSystemName
 --------------
+
+.. container::
+
+ - *definition*: :code:`withSystemName(name: string)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*: :code:`builder.withSystemName('TestName')`
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                system: {
+                    config: {
+                        name: 'TestName'
+                    }
+                }
+            }
+        }
 
 .. _withTransportCert:
 
 withTransportCert
 -----------------
 
+.. container::
+
+ - *definition*: :code:`withTransportCert(cert: string)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*:
+
+    .. code-block::
+
+        `builder.withTransportCert(
+                    '-----BEGIN CERTIFICATE-----\nMQswCQYDVQQGEwJVUz\n-----END CERTIFICATE-----')`
+
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                transport: {
+                    config: {
+                        cert: '-----BEGIN CERTIFICATE-----\nMQswCQYDVQQGEwJVUz\n-----END CERTIFICATE-----'
+                    }
+                }
+            }
+        }
+
 .. _withTransportCertPath:
 
 withTransportCertPath
 ---------------------
+
+.. container::
+
+ - *definition*: :code:`withTransportCertPath(path: string)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*: :code:`builder.withTransportCertPath('cert/path')`
+
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                transport: {
+                    config: {
+                        certPath: 'cert/path'
+                    }
+                }
+            }
+        }
 
 .. _withTransportKeepAliveTimeout:
 
 withTransportKeepAliveTimeout
 -----------------------------
 
+.. container::
+
+ - *definition*: :code:`withTransportKeepAliveTimeout(timeout: number)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*: :code:`builder.withTransportKeepAliveTimeout(50000)`
+
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                transport: {
+                    config: {
+                        keepAliveTimeout: 50000
+                    }
+                }
+            }
+        }
+
 .. _withTransportKey:
 
 withTransportKey
 ----------------
+
+.. container::
+
+ - *definition*: :code:`withTransportKey(key: string)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*: :code:`builder.withTransportKey('test-key-123612783')`
+
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                transport: {
+                    config: {
+                        key: 'test-key-123612783'
+                    }
+                }
+            }
+        }
 
 .. _withTransportKeyPath:
 
 withTransportKeyPath
 --------------------
 
+.. container::
+
+ - *definition*: :code:`withTransportKeyPath(keyPath: string)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*: :code:`builder.withTransportKeyPath('key/path/test-key')`
+
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                transport: {
+                    config: {
+                        keyPath: 'key/path/test-key'
+                    }
+                }
+            }
+        }
+
 .. _withTransportMode:
 
 withTransportMode
 -----------------
+
+.. container::
+
+ - *definition*: :code:`withTransportMode(mode: string)`
+ - *purpose*: [TODO]
+ - *applies to*: **happn**, **happn-cluster**, **happner**, **happner-cluster**
+ - *example*: :code:`builder.withTransportMode('testMode')`
+
+ - *build result*:
+
+    .. code-block::
+
+        {
+            services: {
+                transport: {
+                    config: {
+                        mode: 'testMode'
+                    }
+                }
+            }
+        }
 
 .. _withDeferListen:
 
 withDeferListen
 ---------------
 
+.. container::
+
+ - *definition*: :code:`withDeferListen(defer: boolean)`
+ - *purpose*: [TODO]
+ - *applies to*: **happner**, **happner-cluster**
+ - *example*: :code:`builder.withDeferListen(true)`
+
+ - *build result*:
+
+    .. code-block::
+
+        {
+            deferListen: true,
+            happn: {}   // note this config contains a nested happn config
+        }
+
 .. _withListenFirst:
 
 withListenFirst
 ---------------
+
+.. container::
+
+ - *definition*: :code:`withListenFirst(listenFirst: boolean)`
+ - *purpose*: [TODO]
+ - *applies to*: **happner**, **happner-cluster**
+ - *example*: :code:`builder.withListenFirst(true)`
+
+ - *build result*:
+
+    .. code-block::
+
+        {
+            listenFirst: true,
+            happn: {}   // note this config contains a nested happn config
+        }
 
 .. _beginComponent:
 
 beginComponent
 --------------
 
+.. container::
+
+ - *definition*: :code:`beginComponent()`
+ - *purpose*: Creates an instance of a nested component builder
+ - *applies to*: **happner**, **happner-cluster**
+ - *example*: :code:`builder.beginComponent()`
+ - *build result*: returns a new component builder instance
+
 .. _withName2:
 
 |rtrif| withName
 ~~~~~~~~~~~~~~~~
 
+.. NOTE::
+
+    This function is only available on the component builder, which is made available by calling :code:`builder.beginComponent()`
+
+.. container::
+
+ - *definition*: :code:`withName(name: string)`
+ - *purpose*: Sets the name of a component
+ - *applies to*: **happner**, **happner-cluster**
+ - *example*:
+
+    .. code-block::
+
+        builder.beginComponent()
+            .withName('testComponent')
+
+ - *build result*:
+
+    .. code-block::
+
+        {
+            happn: {},   // note this config contains a nested happn config
+            components: {
+                testComponent: {}
+            }
+        }
+
 .. _withModuleName:
 
 |rtrif| withModuleName
 ~~~~~~~~~~~~~~~~~~~~~~
+
+.. NOTE::
+
+    This function is only available on the component builder, which is made available by calling :code:`builder.beginComponent()`
+
+.. container::
+
+ - *definition*: :code:`withModuleName(name: string)`
+ - *purpose*: Sets the name of a component's associated module
+ - *applies to*: **happner**, **happner-cluster**
+ - *example*:
+
+    .. code-block::
+
+        builder.beginComponent()
+            .withModuleName('testModule')
+
+ - *build result*:
+
+    .. code-block::
+
+        {
+            happn: {},   // note this config contains a nested happn config
+            components: {
+                testComponent: {    // assumes that the module name has been set (see withModuleName())
+                    module: 'testModule',
+                }
+            }
+        }
+
 
 .. _withSchemaExclusive:
 
@@ -1174,28 +1616,34 @@ beginComponent
 .. _withName3:
 
 |rtri| withName
+^^^^^^^^^^^^^^^
 
 .. _withModelType:
 
 |rtri| withModelType
+^^^^^^^^^^^^^^^^^^^^
 
 .. _withAlias:
 
 |rtri| withAlias
+^^^^^^^^^^^^^^^^
 
 .. _withParameter:
 
 |rtri| withParameter
+^^^^^^^^^^^^^^^^^^^^
 
 .. _withCallbackParameter:
 
 |rtri| withCallbackParameter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _endFunction:
 
 |rtri| endFunction
+~~~~~~~~~~~~~~~~~~
 
 .. _endComponent:
 
 |rtri| endComponent
-
+-------------------
